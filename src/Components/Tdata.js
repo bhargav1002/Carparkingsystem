@@ -1,7 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function Tdata(props) {
-
 
     const clickHandler = (id) =>
     {
@@ -13,7 +12,7 @@ export default function Tdata(props) {
         {props.data.map((obj) =>
         {
             return (
-                <td id={obj.number} key={obj.number} onClick={(e) => clickHandler(obj.number)} style={{ backgroundColor: obj.isfilled && 'green' }}>{obj.number}</td>
+                <td id={obj.number} key={obj.number} onClick={(e) => clickHandler(obj.number)} style={{ backgroundColor: obj.isfilled && 'green', width:"150px"}} className='border border-2'>{obj.number}</td>
             )
         })}
     </>
