@@ -75,6 +75,8 @@ export default function Tform(props) {
                 }
             }
         }
+        setFormcarno('');
+        setFormtime('');
     }
 
 
