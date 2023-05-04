@@ -98,7 +98,7 @@ export default function Tform(props) {
                 }
             }
         }
-    }, [props.showform])
+    }, [props.showform,data,props.id])
 
     return (
         <div style={{ display: "flex", justifyContent: "center" }}>
